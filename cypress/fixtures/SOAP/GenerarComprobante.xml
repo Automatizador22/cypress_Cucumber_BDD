@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://contrologis.com" xmlns:sys="http://schemas.datacontract.org/2004/07/System" xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+   <soapenv:Header>
+        <Security soapenv:mustUnderstand="1"
+            xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+            xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken u:Id="03f13e00-d9e5-481e-bd1f-976fc1319c44">
+                <Username>{{usuario}}</Username>
+                <Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{{contrasena}}</Password>
+            </UsernameToken>
+        </Security>
+        <Usuario xmlns="http://controller.com">{{usuario}}</Usuario>
+        <IdUsuario
+            xmlns="http://controller.com">8781
+        </IdUsuario>
+        <IdCentroServicio
+            xmlns="http://controller.com">1287
+        </IdCentroServicio>
+        <NombreCentroServicio
+            xmlns="http://controller.com">COL/BOGOTA/CUND/COL/CALLE 18 # 65 A 03
+        </NombreCentroServicio>
+        <IdAplicativoOrigen
+            xmlns="http://controller.com">1
+        </IdAplicativoOrigen>
+        <IdMaquina
+            xmlns="http://controller.com">5a158d19-3574-49e1-b868-94ce3e8cd5d5
+        </IdMaquina>
+        <IdCaja
+            xmlns="http://controller.com">0
+        </IdCaja>
+        <TokenSesion
+            xmlns="http://controller.com">F987C266-EC97-483D-A345-292142E24439
+        </TokenSesion>
+        <UriRelativa
+            xmlns="http://controller.com">7x3Ay2egBUn4C4Aatmrj97znqiyIB6NUfEVLax5Dry/NuYFMTyZfs7jczgaYmved
+        </UriRelativa>
+    </soapenv:Header>
+   <soapenv:Body>
+      <con:GenerarFactura>
+         <con:idFacturaPre>PRE_FACTURA</con:idFacturaPre>
+      </con:GenerarFactura>
+   </soapenv:Body>
+</soapenv:Envelope>

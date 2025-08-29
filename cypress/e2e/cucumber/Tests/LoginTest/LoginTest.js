@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import login from "../../Pages/LoginPage/LoginPage.js";
+import login from "../../Pages/LoginPage/LoginPage.cy.js";
 
 Given("I navigate to the Website", () => {
   login.enterURL();
