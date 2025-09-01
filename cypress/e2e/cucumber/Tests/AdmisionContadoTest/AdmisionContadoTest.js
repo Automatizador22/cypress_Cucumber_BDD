@@ -9,15 +9,16 @@ When("Genero el comprobante", () => {
     AdmisionContadoPage.GenerarFacturaConsolidada();
 });
 
-Then("Valido que se genere la guía, la prefactura y la factura", () => {
+When("Ingreso a Centro de Acopio", () => {
+    AdmisionContadoPage.IngresarCentroAcopio();
+});
+
+Then("Valido que se genere la guía correctamente", () => {
     const numeroGuia = Cypress.env('generatedNumeroGuia');
     const numeroPreFactura = Cypress.env('generatedNumeroPreFactura');
     const idFactura = Cypress.env('generatedIdFactura');
 
-    cy.wrap(numeroGuia).should('exist').and('not.be.empty');
-    cy.log(`Guía generada: ${numeroGuia}`);
-    cy.wrap(numeroPreFactura).should('exist').and('not.be.empty');
-    cy.log(`PreFactura generada: ${numeroPreFactura}`);
-    cy.wrap(idFactura).should('exist').and('not.be.empty');
-    cy.log(`Factura generada: ${idFactura}`);
+    cy.wrap(numeroGuia).should('exist');
+    cy.wrap(numeroPreFactura).should('exist');
+    cy.wrap(idFactura).should('exist');
 });

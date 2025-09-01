@@ -1,0 +1,79 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://contrologis.com">
+<soapenv:Header>
+        <Security soapenv:mustUnderstand="1"
+            xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+            xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken u:Id="03f13e00-d9e5-481e-bd1f-976fc1319c44">
+                <Username>{{usuario}}</Username>
+                <Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{{contrasena}}</Password>
+            </UsernameToken>
+        </Security>
+        <Usuario xmlns="http://controller.com">{{usuario}}</Usuario>
+        <IdUsuario
+            xmlns="http://controller.com">8781
+        </IdUsuario>
+        <IdCentroServicio
+            xmlns="http://controller.com">1287
+        </IdCentroServicio>
+        <NombreCentroServicio
+            xmlns="http://controller.com">COL/BOGOTA/CUND/COL/CALLE 18 # 65 A 03
+        </NombreCentroServicio>
+        <IdAplicativoOrigen
+            xmlns="http://controller.com">1
+        </IdAplicativoOrigen>
+        <IdMaquina
+            xmlns="http://controller.com">5a158d19-3574-49e1-b868-94ce3e8cd5d5
+        </IdMaquina>
+        <IdCaja
+            xmlns="http://controller.com">0
+        </IdCaja>
+        <TokenSesion
+            xmlns="http://controller.com">F987C266-EC97-483D-A345-292142E24439
+        </TokenSesion>
+        <UriRelativa
+            xmlns="http://controller.com">7x3Ay2egBUn4C4Aatmrj97znqiyIB6NUfEVLax5Dry/NuYFMTyZfs7jczgaYmved
+        </UriRelativa>
+    </soapenv:Header>
+   <soapenv:Body>
+      <con:IngresarGuiaSueltaWPF>
+         <!--Optional:-->
+         <con:guia>
+            <!--Optional:-->
+            <con:CreadoPor></con:CreadoPor>
+     <con:DiceContener>TECLADO</con:DiceContener>
+     <con:EsEntregada>false</con:EsEntregada>
+     <con:EsRecomendado>false</con:EsRecomendado>
+     <con:EsSeleccionado>false</con:EsSeleccionado>
+     <con:IdAdmision>0</con:IdAdmision>
+     <con:IdAsignacionTula>0</con:IdAsignacionTula>
+     <con:IdCiudadDestino></con:IdCiudadDestino>
+     <con:IdCiudadOrigen>11001000</con:IdCiudadOrigen>
+     <con:IdCiudadOrigenGuia></con:IdCiudadOrigenGuia>
+     <con:IdIngresoGuia>0</con:IdIngresoGuia>
+     <con:IdPlanilla>0</con:IdPlanilla>
+     <con:IdPlanillaContenedor>0</con:IdPlanillaContenedor>
+     <con:IdPuntoServicio>0</con:IdPuntoServicio>
+     <con:IdServicio>0</con:IdServicio>
+     <con:IdTipoConsolidado>0</con:IdTipoConsolidado>
+     <con:IdUnidadNegocio>0</con:IdUnidadNegocio>
+     <con:Mensajero></con:Mensajero>
+     <con:NombreCiudadDestino></con:NombreCiudadDestino>
+     <con:NombreCiudadOrigen>BOGOTA</con:NombreCiudadOrigen>
+     <con:NombreCiudadOrigenGuia></con:NombreCiudadOrigenGuia>
+     <con:NombreServicio>0</con:NombreServicio>
+     <con:NumContTransRetorno>0</con:NumContTransRetorno>
+     <con:NumeroGuia>GUIA_GENERADA</con:NumeroGuia>
+     <con:NumeroTulaContenedor>0</con:NumeroTulaContenedor>
+     <con:Peso>0</con:Peso>
+     <con:PiezaActualRotulo>0</con:PiezaActualRotulo>
+     <con:Suelta>false</con:Suelta>
+     <con:TipoEnvio></con:TipoEnvio>
+     <con:TipoEnvioPlanilla>Vendido</con:TipoEnvioPlanilla>
+     <con:TotalPiezasRotulo>0</con:TotalPiezasRotulo>
+         </con:guia>
+         <!--Optional:-->
+         <con:listaNovedades>
+         </con:listaNovedades>
+      </con:IngresarGuiaSueltaWPF>
+   </soapenv:Body>
+</soapenv:Envelope>

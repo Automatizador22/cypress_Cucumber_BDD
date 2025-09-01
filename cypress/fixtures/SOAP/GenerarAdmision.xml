@@ -50,7 +50,7 @@ xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-s
         <con:CodigoPostalDestino>111211200</con:CodigoPostalDestino>
         <con:CodigoPostalOrigen>110871081</con:CodigoPostalOrigen>
         <con:ContraPagoPagado>false</con:ContraPagoPagado>
-        <con:CreadoPor>admin</con:CreadoPor>
+        <con:CreadoPor>joansdurangos</con:CreadoPor>
         <con:DescripcionTipoEntrega>ENTREGA EN DIRECCION</con:DescripcionTipoEntrega>
         
         <con:Destinatario>
@@ -109,7 +109,7 @@ xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-s
           <con:ADGuiaFormaPago>
             <con:Descripcion>Contado</con:Descripcion>
             <con:IdFormaPago>1</con:IdFormaPago>
-            <con:Valor>8000</con:Valor>
+            <con:Valor>12200</con:Valor>
           </con:ADGuiaFormaPago>
         </con:FormasPago>
         
@@ -202,7 +202,7 @@ xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-s
             <con:ValidacionPlaca>99</con:ValidacionPlaca>
             <con:ZonaPostal>110871081</con:ZonaPostal>
           </con:DatosGeoCliente>
-          <con:Direccion>CL 2 # 93d-66 ,LOS PANTANOS ,los pantamos</con:Direccion>
+          <con:Direccion>CL 2 # 93d-66 ,LOS PANTANOS ,los pantanos</con:Direccion>
           <con:Email>ingeniero.automatizador22@interrapidisimo.com</con:Email>
           <con:EsPagoEnCasa>false</con:EsPagoEnCasa>
           <con:IdClienteContado>0</con:IdClienteContado>
@@ -270,7 +270,7 @@ xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-s
         <con:PeatonRemitente>
           <con:Apellido1>Durango</con:Apellido1>
           <con:Apellido2/>
-          <con:Direccion>CL 2 # 93d-66 ,LOS PANTANOS ,los pantamos</con:Direccion>
+          <con:Direccion>CL 2 # 93d-66 ,LOS PANTANOS ,los pantanos</con:Direccion>
           <con:Email>ingeniero.automatizador22@interrapidisimo.com</con:Email>
           <con:Identificacion>1012455804</con:Identificacion>
           <con:Localidad>11001000</con:Localidad>
