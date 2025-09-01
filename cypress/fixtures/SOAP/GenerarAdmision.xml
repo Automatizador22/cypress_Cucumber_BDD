@@ -1,0 +1,284 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:con="http://contrologis.com" 
+xmlns:co="http://schemas.datacontract.org/2004/07/CO.Servidor.Servicios.ContratoDatos.Admisiones.Mensajeria" 
+xmlns:arr="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+ <soapenv:Header>
+        <Security soapenv:mustUnderstand="1"
+            xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+            xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <UsernameToken u:Id="03f13e00-d9e5-481e-bd1f-976fc1319c44">
+                <Username>{{usuario}}</Username>
+                <Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{{contrasena}}</Password>
+            </UsernameToken>
+        </Security>
+        <Usuario xmlns="http://controller.com">{{usuario}}</Usuario>
+        <IdUsuario
+            xmlns="http://controller.com">8781
+        </IdUsuario>
+        <IdCentroServicio
+            xmlns="http://controller.com">1287
+        </IdCentroServicio>
+        <NombreCentroServicio
+            xmlns="http://controller.com">COL/BOGOTA/CUND/COL/CALLE 18 # 65 A 03
+        </NombreCentroServicio>
+        <IdAplicativoOrigen
+            xmlns="http://controller.com">2
+        </IdAplicativoOrigen>
+        <IdMaquina
+            xmlns="http://controller.com">5a158d19-3574-49e1-b868-94ce3e8cd5d5
+        </IdMaquina>
+        <IdCaja
+            xmlns="http://controller.com">0
+        </IdCaja>
+        <TokenSesion
+            xmlns="http://controller.com">F987C266-EC97-483D-A345-292142E24439
+        </TokenSesion>
+        <UriRelativa
+            xmlns="http://controller.com">7x3Ay2egBUn4C4Aatmrj97znqiyIB6NUfEVLax5Dry/NuYFMTyZfs7jczgaYmved
+        </UriRelativa>
+    </soapenv:Header>
+   <soapenv:Body>
+    <con:RegistrarGuiaAutomatica>
+      <con:guia>
+        <con:AdmisionSistemaMensajero>false</con:AdmisionSistemaMensajero>
+        <con:Alto>0</con:Alto>
+        <con:Ancho>0</con:Ancho>
+        <con:Aprobada>false</con:Aprobada>
+        <con:Caja>0</con:Caja>
+        <con:CantidadIntentosEntrega>0</con:CantidadIntentosEntrega>
+        <con:CodigoPostalDestino>111211200</con:CodigoPostalDestino>
+        <con:CodigoPostalOrigen>110871081</con:CodigoPostalOrigen>
+        <con:ContraPagoPagado>false</con:ContraPagoPagado>
+        <con:CreadoPor>admin</con:CreadoPor>
+        <con:DescripcionTipoEntrega>ENTREGA EN DIRECCION</con:DescripcionTipoEntrega>
+        
+        <con:Destinatario>
+          <con:Apellido1>Durango</con:Apellido1>
+          <con:Apellido2>Suarez</con:Apellido2>
+          <con:ClienteModificado>false</con:ClienteModificado>
+          <con:DatosGeoCliente>
+            <con:Barrio>POLO CLUB</con:Barrio>
+            <con:DireccionNormalizada>CL 80 # 24 - 16</con:DireccionNormalizada>
+            <con:Estado>Y</con:Estado>
+            <con:IdAdmisionMensajera>0</con:IdAdmisionMensajera>
+            <con:Latitud>4.67031083</con:Latitud>
+            <con:Localidad>BARRIOS UNIDOS</con:Localidad>
+            <con:Longitud>-74.06417622</con:Longitud>
+            <con:Macrozona>C66</con:Macrozona>
+            <con:Microzona>7AGO</con:Microzona>
+            <con:Validacion>99</con:Validacion>
+            <con:ValidacionPlaca>99</con:ValidacionPlaca>
+            <con:ZonaPostal>111211200</con:ZonaPostal>
+          </con:DatosGeoCliente>
+          <con:Direccion>CL 80 # 24 - 16 ,prueba ,Garces Navas</con:Direccion>
+          <con:Email> </con:Email>
+          <con:EsPagoEnCasa>false</con:EsPagoEnCasa>
+          <con:IdClienteContado>0</con:IdClienteContado>
+          <con:Identificacion>1012455804</con:Identificacion>
+          <con:Localidad>11001000</con:Localidad>
+          <con:Nombre>Joan</con:Nombre>
+          <con:Telefono>3333333333</con:Telefono>
+          <con:TipoId>CC</con:TipoId>
+          <con:TipoIdentificacion>0</con:TipoIdentificacion>
+        </con:Destinatario>
+        
+        <con:DiasDeEntrega>3</con:DiasDeEntrega>
+        <con:DiceContener>Pruebas</con:DiceContener>
+        <con:DigitoVerificacion>0</con:DigitoVerificacion>
+        <con:DimPeso>0</con:DimPeso>
+        <con:DireccionDestinatario>CL 80 # 24 - 16 ,PRUEBA ,Garces Navas</con:DireccionDestinatario>
+        <con:Entregada>false</con:Entregada>
+        <con:EsAlCobro>false</con:EsAlCobro>
+        <con:EsAutomatico>true</con:EsAutomatico>
+        <con:EsPesoVolumetrico>false</con:EsPesoVolumetrico>
+        <con:EsRecomendado>false</con:EsRecomendado>
+        <con:EstaImpresa>false</con:EstaImpresa>
+        <con:EstaPagada>true</con:EstaPagada>
+        <con:EstadoGuia>Admitida</con:EstadoGuia>
+        <con:FechaAdmision>2025-01-01T00:00:00</con:FechaAdmision>
+        <con:FechaEntrega>2025-01-01T00:00:00</con:FechaEntrega>
+        <con:FechaEstimadaArchivo>2025-01-01T00:00:00</con:FechaEstimadaArchivo>
+        <con:FechaEstimadaDigitalizacion>2025-01-01T00:00:00</con:FechaEstimadaDigitalizacion>
+        <con:FechaEstimadaEntrega>2024-07-25T18:00:00</con:FechaEstimadaEntrega>
+        <con:FechaEstimadaEntregaNew>2025-01-01T00:00:00</con:FechaEstimadaEntregaNew>
+        <con:FechaGrabacion>2025-01-01T00:00:00</con:FechaGrabacion>
+        <con:FechaSupervision>2025-01-01T00:00:00</con:FechaSupervision>
+        
+        <con:FormasPago>
+          <con:ADGuiaFormaPago>
+            <con:Descripcion>Contado</con:Descripcion>
+            <con:IdFormaPago>1</con:IdFormaPago>
+            <con:Valor>8000</con:Valor>
+          </con:ADGuiaFormaPago>
+        </con:FormasPago>
+        
+        <con:GeneraFacturaConsolidada>true</con:GeneraFacturaConsolidada>
+        
+        <con:GeoReferenciacion>
+          <con:Barrio>POLO CLUB</con:Barrio>
+          <con:DireccionNormalizada>CL 80 # 24 - 16</con:DireccionNormalizada>
+          <con:Estado>Y</con:Estado>
+          <con:IdAdmisionMensajera>0</con:IdAdmisionMensajera>
+          <con:Latitud>4.67031083</con:Latitud>
+          <con:Localidad>BARRIOS UNIDOS</con:Localidad>
+          <con:Longitud>-74.06417622</con:Longitud>
+          <con:Macrozona>C66</con:Macrozona>
+          <con:Microzona>7AGO</con:Microzona>
+          <con:Validacion>99</con:Validacion>
+          <con:ValidacionPlaca>99</con:ValidacionPlaca>
+          <con:ZonaPostal>111211200</con:ZonaPostal>
+        </con:GeoReferenciacion>
+        
+        <con:GuidDeChequeo>12bb5752-04a4-4155-a133-43dec308a4c4</con:GuidDeChequeo>
+        <con:HorarioAdicional>false</con:HorarioAdicional>
+        <con:IdAdmision>0</con:IdAdmision>
+        <con:IdCaja>0</con:IdCaja>
+        <con:IdCentroServicioDestino>1287</con:IdCentroServicioDestino>
+        <con:IdCentroServicioEstado>0</con:IdCentroServicioEstado>
+        <con:IdCentroServicioOrigen>1295</con:IdCentroServicioOrigen>
+        <con:IdCiudadDestino>11001000</con:IdCiudadDestino>
+        <con:IdCiudadOrigen>11001000</con:IdCiudadOrigen>
+        <con:IdCliente>0</con:IdCliente>
+        <con:IdCodigoUsuario>1</con:IdCodigoUsuario>
+        <con:IdConceptoCaja>3</con:IdConceptoCaja>
+        <con:IdContrato>0</con:IdContrato>
+        <con:IdMensajero>0</con:IdMensajero>
+        <con:IdMotivoNoUsoBolsaSegurida>0</con:IdMotivoNoUsoBolsaSegurida>
+        <con:IdMotivoPreAnulacion>0</con:IdMotivoPreAnulacion>
+        <con:IdPaisDestino>057</con:IdPaisDestino>
+        <con:IdPaisOrigen>057</con:IdPaisOrigen>
+        <con:IdServicio>3</con:IdServicio>
+        <con:IdSucursal>0</con:IdSucursal>
+        <con:IdTipoEntrega>1</con:IdTipoEntrega>
+        <con:IdTipoEnvio>3</con:IdTipoEnvio>
+        <con:IdTrazaGuia>0</con:IdTrazaGuia>
+        <con:IdUnidadMedida>Kg</con:IdUnidadMedida>
+        <con:IdUnidadNegocio>MEN</con:IdUnidadNegocio>
+        <con:IdfacturaConsolidada>0</con:IdfacturaConsolidada>
+        <con:Largo>0</con:Largo>
+        <con:Lote>0</con:Lote>
+        <con:MotivoNoUsoBolsaSeguriDesc>PTA-20</con:MotivoNoUsoBolsaSeguriDesc>
+        <con:NoAprobada>false</con:NoAprobada>
+        <con:NombreCentroServicioDestino>COL/BOGOTA/CUND/COL/OF. PRINC CALLE 18 # 65 A 03</con:NombreCentroServicioDestino>
+        <con:NombreCentroServicioOrigen>PTO/BOGOTA/CUND/COL/OF PRINCIPAL - CRA 30 # 7-45</con:NombreCentroServicioOrigen>
+        <con:NombreCiudadDestino>BOGOTA / CUNDINAMARCA</con:NombreCiudadDestino>
+        <con:NombreCiudadOrigen>BOGOTA / CUNDINAMARCA</con:NombreCiudadOrigen>
+        <con:NombreCortoCiudadDestino>BOG</con:NombreCortoCiudadDestino>
+        <con:NombreCortoCiudadOrigen>BOG</con:NombreCortoCiudadOrigen>
+        <con:NombrePaisDestino>COLOMBIA</con:NombrePaisDestino>
+        <con:NombrePaisOrigen>COLOMBIA</con:NombrePaisOrigen>
+        <con:NombreServicio>MENSAJERÍA</con:NombreServicio>
+        <con:NombreTipoEnvio>PAQUETE PEQUEÑO</con:NombreTipoEnvio>
+        <con:NotificarEntregaPorEmail>false</con:NotificarEntregaPorEmail>
+        <con:NuevaFechaEntrega>false</con:NuevaFechaEntrega>
+        <con:NumeroFolios>0</con:NumeroFolios>
+        <con:NumeroGuia>0</con:NumeroGuia>
+        <con:NumeroGuiaDHL>0</con:NumeroGuiaDHL>
+        <con:NumeroPieza>1</con:NumeroPieza>
+        <con:Observaciones>Pruebas</con:Observaciones>
+        <con:OmitirFacturaDian>true</con:OmitirFacturaDian>
+        <con:Peso>2</con:Peso>
+        <con:PesoLiqMasa>2</con:PesoLiqMasa>
+        <con:PesoLiqVolumetrico>0</con:PesoLiqVolumetrico>
+        <con:PieceID>0</con:PieceID>
+        <con:Posicion>0</con:Posicion>
+
+        <con:Remitente>
+          <con:Apellido1>Ardila</con:Apellido1>
+          <con:Apellido2/>
+          <con:ClienteModificado>false</con:ClienteModificado>
+          <con:DatosGeoCliente>
+            <con:Barrio>LOS PANTANOS</con:Barrio>
+            <con:DireccionNormalizada>CL 2 # 93 D - 66</con:DireccionNormalizada>
+            <con:Estado>Y</con:Estado>
+            <con:IdAdmisionMensajera>0</con:IdAdmisionMensajera>
+            <con:Latitud>4.650627545</con:Latitud>
+            <con:Localidad>KENNEDY</con:Localidad>
+            <con:Longitud>-74.16800475</con:Longitud>
+            <con:Macrozona>D2</con:Macrozona>
+            <con:Microzona>2KEN</con:Microzona>
+            <con:Validacion>99</con:Validacion>
+            <con:ValidacionPlaca>99</con:ValidacionPlaca>
+            <con:ZonaPostal>110871081</con:ZonaPostal>
+          </con:DatosGeoCliente>
+          <con:Direccion>CL 2 # 93d-66 ,LOS PANTANOS ,los pantamos</con:Direccion>
+          <con:Email>ingeniero.automatizador22@interrapidisimo.com</con:Email>
+          <con:EsPagoEnCasa>false</con:EsPagoEnCasa>
+          <con:IdClienteContado>0</con:IdClienteContado>
+          <con:Identificacion>1001871186</con:Identificacion>
+          <con:Localidad>11001000</con:Localidad>
+          <con:Nombre>Andrea</con:Nombre>
+          <con:Telefono>3012120900</con:Telefono>
+          <con:TipoId>CC</con:TipoId>
+          <con:TipoIdentificacion>0</con:TipoIdentificacion>
+        </con:Remitente>
+        
+        <con:Supervision>false</con:Supervision>
+        <con:TelefonoDestinatario>3043730300</con:TelefonoDestinatario>
+        <con:TipoCliente>PPE</con:TipoCliente>
+        <con:TokenClienteCredito>00000000-0000-0000-0000-000000000000</con:TokenClienteCredito>
+        <con:TotalPaginas>0</con:TotalPaginas>
+        <con:TotalPiezas>1</con:TotalPiezas>
+        <con:ValorAdicionales>0</con:ValorAdicionales>
+        <con:ValorAdmision>11200.0000</con:ValorAdmision>
+        <con:ValorComercialDolares>0</con:ValorComercialDolares>
+        <con:ValorContraPago>0</con:ValorContraPago>
+        <con:ValorDeclarado>45000.0000</con:ValorDeclarado>
+        <con:ValorDescuento>0</con:ValorDescuento>
+        <con:ValorEmpaque>0</con:ValorEmpaque>
+        <con:ValorPrimaSeguro>900.00000000</con:ValorPrimaSeguro>
+        <con:ValorServicio>11300.0000</con:ValorServicio>
+        <con:ValorTotal>12200.00000000</con:ValorTotal>
+        <con:ValorTotalImpuestos>0</con:ValorTotalImpuestos>
+        <con:ValorTotalRetenciones>0</con:ValorTotalRetenciones>
+        <con:ValoresAdicionales/>
+        <con:VerificacionContenido>false</con:VerificacionContenido>
+      </con:guia>
+      
+      <con:idCaja>1</con:idCaja>
+      
+      <con:remitenteDestinatario>
+        <con:EsAnulacionBelcorp>false</con:EsAnulacionBelcorp>
+        <con:FacturaRemitente>false</con:FacturaRemitente>
+        <con:PeatonDestinatario>
+          <con:Apellido1>Durango</con:Apellido1>
+          <con:Apellido2>Suarez</con:Apellido2>
+          <con:DatosGeoCliente>
+            <con:Barrio>POLO CLUB</con:Barrio>
+            <con:DireccionNormalizada>CL 80 # 24 - 16</con:DireccionNormalizada>
+            <con:Estado>Y</con:Estado>
+            <con:IdAdmisionMensajera>0</con:IdAdmisionMensajera>
+            <con:Latitud>4.67031083</con:Latitud>
+            <con:Localidad>BARRIOS UNIDOS</con:Localidad>
+            <con:Longitud>-74.06417622</con:Longitud>
+            <con:Macrozona>C66</con:Macrozona>
+            <con:Microzona>7AGO</con:Microzona>
+            <con:Validacion>99</con:Validacion>
+            <con:ValidacionPlaca>99</con:ValidacionPlaca>
+            <con:ZonaPostal>111211200</con:ZonaPostal>
+          </con:DatosGeoCliente>
+          <con:Direccion>CL 80 # 24 - 16 ,prueba ,Garcces Navas</con:Direccion>
+          <con:Email>ingeniero.automatizador22@interrapidisimo.com</con:Email>
+          <con:Identificacion>1012455804</con:Identificacion>
+          <con:Localidad>11001000</con:Localidad>
+          <con:Nombre>Joan</con:Nombre>
+          <con:Telefono>3043730300</con:Telefono>
+          <con:TipoIdentificacion>CC</con:TipoIdentificacion>
+        </con:PeatonDestinatario>
+        
+        <con:PeatonRemitente>
+          <con:Apellido1>Durango</con:Apellido1>
+          <con:Apellido2/>
+          <con:Direccion>CL 2 # 93d-66 ,LOS PANTANOS ,los pantamos</con:Direccion>
+          <con:Email>ingeniero.automatizador22@interrapidisimo.com</con:Email>
+          <con:Identificacion>1012455804</con:Identificacion>
+          <con:Localidad>11001000</con:Localidad>
+          <con:Nombre>Joan</con:Nombre>
+          <con:Telefono>3043730300</con:Telefono>
+          <con:TipoIdentificacion>CC</con:TipoIdentificacion>
+        </con:PeatonRemitente>
+      </con:remitenteDestinatario>
+    </con:RegistrarGuiaAutomatica>
+  </soapenv:Body>
+</soapenv:Envelope>

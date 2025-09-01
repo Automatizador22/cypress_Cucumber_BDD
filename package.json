@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,15 +15,19 @@
     "@babel/preset-env": "^7.28.3",
     "@badeball/cypress-cucumber-preprocessor": "^23.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
-    "@cypress/webpack-preprocessor": "^7.0.1",
     "babel-loader": "^10.0.0",
     "cypress": "^13.1.0",
     "esbuild": "^0.25.9",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
-    "webpack": "^5.101.3"
+    "stream-browserify": "^3.0.0",
+    "timers-browserify": "^2.0.12",
+    "util": "^0.12.5"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
-}
+  },
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  }
 }
